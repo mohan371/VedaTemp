@@ -185,9 +185,26 @@ export default function Navbar() {
                 <Button
                   variant="outline"
                   className="w-full justify-center"
-                  href="/jobs/search"
+                  href="/students"
+                  onClick={closeDrawer}
                 >
-                  Find Jobs
+                  For Students
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full justify-center"
+                  href="/universities"
+                  onClick={closeDrawer}
+                >
+                  For Organizations
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full justify-center"
+                  href="/jobs/search"
+                  onClick={closeDrawer}
+                >
+                  For Job Seekers
                 </Button>
               </div>
             </div>
