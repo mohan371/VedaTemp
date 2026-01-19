@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Main Content */}
           <div className="relative z-10 animate-fade-in">
             {/* Main Heading */}
-            <h1 className="text-5xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2 leading-tight min-h-[60px] md:min-h-[70px] lg:min-h-[80px] flex items-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight min-h-[60px] md:min-h-[70px] lg:min-h-[80px] flex items-center">
               <span
                 key={`main-${currentText}`}
                 className="inline-block animate-fade-in-up"
@@ -63,7 +63,7 @@ export default function Hero() {
                 {mainTexts[currentText]}
               </span>
             </h1>
-            <h2 className="text-5xl md:text-3xl lg:text-4xl font-extrabold mb-4 text-[var(--gold)] leading-tight min-h-[60px] md:min-h-[70px] lg:min-h-[80px] flex items-center relative">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-[var(--gold)] leading-tight min-h-[60px] md:min-h-[70px] lg:min-h-[80px] flex items-center relative">
               <span
                 key={`sub-${currentText}`}
                 className="inline-block animate-fade-in-up hover:text-[var(--gold-hover)] transition-colors duration-300 cursor-pointer"
