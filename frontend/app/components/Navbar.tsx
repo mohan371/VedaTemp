@@ -81,7 +81,7 @@ export default function Navbar() {
                   href="/universities"
                 >
 
-                  For Organizations
+                  For Recruiters
                 </Button>
                 <Button
                   variant="outline"
@@ -196,7 +196,7 @@ export default function Navbar() {
                   href="/universities"
                   onClick={closeDrawer}
                 >
-                  For Organizations
+                  For Recruiters
                 </Button>
                 <Button
                   variant="outline"

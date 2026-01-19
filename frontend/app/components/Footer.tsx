@@ -139,7 +139,7 @@ export default function Footer() {
                 <li><Link href="/immigration-guide" className="text-white/80 hover:text-white transition-colors">Immigration Guide</Link></li>
                 <li><Link href="/country-guides" className="text-white/80 hover:text-white transition-colors">Country Guides</Link></li>
                 <li><Link href="/events" className="text-white/80 hover:text-white transition-colors">Workshops and Webinars</Link></li>
-                <li><Link href="/employer-handbook" className="text-white/80 hover:text-white transition-colors">Employer Handbook</Link></li>
+                <li><Link href="/employer-handbook" className="text-white/80 hover:text-white transition-colors">Recruiter Handbook</Link></li>
               </ul>
             </div>
 

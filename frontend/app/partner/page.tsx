@@ -3,7 +3,7 @@
 
 
 import Link from "next/link";
-import { CheckCircle, Users, Globe, Building2, TrendingUp, Handshake } from "lucide-react";
+import { CheckCircle, Users, Globe, Building2, TrendingUp, Handshake, Star } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
@@ -21,27 +21,28 @@ export default function PartnerPage() {
                         <div className="animate-fade-in text-white">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6 backdrop-blur-sm">
                                 <Handshake className="w-5 h-5 text-[var(--gold)]" />
-                                <span className="text-[var(--gold)] font-semibold text-sm tracking-wide">For Universities & Employers</span>
+                                <span className="text-[var(--gold)] font-semibold text-sm tracking-wide">For Universities & Recruiters</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                                Expand Your <span className="text-[var(--gold)]">Global Reach</span> With Veda Scholars
+                                Global Handling <br />
+                                <span className="text-[var(--gold)]">Expertise Powered by AI</span>
                             </h1>
                             <p className="text-lg text-white/80 mb-8 leading-relaxed max-w-xl">
-                                Join our network of 50+ universities and 200+ employers. We connect exceptional talent with world-class opportunities through seamless visa processing and recruitment solutions.
+                                Veda Scholars is an internationally registered Overseas Recruitment Agency & HR Solutions Provider with a strong global footprint across India, Dubai (UAE), and the United Kingdom.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link href="/get-in-touch">
+                                <Link href="/get-in-touch" className="w-full sm:w-auto">
                                     <Button
                                         variant="primary"
-                                        className="bg-[var(--gold)] text-[var(--blue-darkest)] border-none hover:bg-white font-bold text-lg px-8 py-4 w-full sm:w-auto shadow-lg hover:shadow-[0_0_20px_var(--gold-glow-medium)]"
+                                        className="bg-[var(--gold)] text-[var(--blue-darkest)] border-none hover:bg-white font-bold text-lg px-8 py-4 w-full shadow-lg hover:shadow-[0_0_20px_var(--gold-glow-medium)]"
                                     >
                                         Become a Partner
                                     </Button>
                                 </Link>
-                                <Link href="/get-in-touch?type=recruit">
+                                <Link href="/get-in-touch?type=recruit" className="w-full sm:w-auto">
                                     <Button
                                         variant="outline"
-                                        className="border-white text-white hover:bg-white hover:text-[var(--blue-darkest)] text-lg px-8 py-4 w-full sm:w-auto"
+                                        className="border-white text-white hover:bg-white hover:text-[var(--blue-darkest)] text-lg px-8 py-4 w-full"
                                     >
                                         Hire Talent
                                     </Button>
@@ -63,10 +64,10 @@ export default function PartnerPage() {
                                 </div>
                                 <div className="space-y-4">
                                     {[
-                                        "Verified Candidate Profiles",
-                                        "Zero-Hassle Visa Support",
-                                        "Dedicated Account Manager",
-                                        "Global Brand Exposure"
+                                        "Verified Talent",
+                                        "Trained Workforce",
+                                        "Trusted Partnership",
+                                        "Global Hiring Expertise"
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-center gap-3 text-white">
                                             <div className="w-8 h-8 rounded-full bg-[var(--gold)]/20 flex items-center justify-center">
@@ -82,44 +83,65 @@ export default function PartnerPage() {
                 </div>
             </section>
 
-            {/* Benefits Section */}
+            {/* Why Choose Us Section */}
             <section className="py-24 px-4 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-[var(--blue-darkest)] mb-4">Why Partner With Us?</h2>
-                        <p className="text-[var(--blue-medium)] max-w-2xl mx-auto">We bridge the gap between education and employment, creating mutually beneficial ecosystems for universities and corporations.</p>
+                        <h2 className="text-3xl md:text-5xl font-bold text-[var(--blue-darkest)] mb-6">Why Choose Us</h2>
+                        <p className="text-[var(--blue-medium)] max-w-3xl mx-auto text-lg leading-relaxed italic">
+                            &quot;Your workforce challenges become our operational responsibility, supported by skilled talent, continuous development, compliance assurance, and AI-enabled efficiency.&quot;
+                        </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             {
-                                icon: Users,
-                                title: "Access Top Talent",
-                                desc: "Pre-screened, motivated graduates ready to contribute from day one.",
-                                for: "Employers"
-                            },
-                            {
                                 icon: Globe,
-                                title: "Global Diversity",
-                                desc: "Enhance your campus or workforce with diverse cultural perspectives.",
-                                for: "Universities"
+                                title: "Global Presence",
+                                desc: "Global presence with local expertise across India, UK, and UAE."
                             },
                             {
                                 icon: TrendingUp,
-                                title: "Boost Employability",
-                                desc: "Increase your institution's placement rates and student satisfaction.",
-                                for: "Universities"
+                                title: "Fast Delivery",
+                                desc: "Fast and efficient talent delivery to meet urgent workforce needs."
+                            },
+                            {
+                                icon: CheckCircle,
+                                title: "Fully Compliant",
+                                desc: "Fully compliant hiring & payroll process identifying reduced operational burden."
+                            },
+                            {
+                                icon: Users,
+                                title: "Workforce Development",
+                                desc: "Continuous workforce development and upskilling programs."
+                            },
+                            {
+                                icon: Handshake,
+                                title: "Dedicated Support",
+                                desc: "Dedicated account manager support for personalized service."
+                            },
+                            {
+                                icon: Building2,
+                                title: "Replacement Assurance",
+                                desc: "Replacement assurance and retention focus for peace of mind."
+                            },
+                            {
+                                icon: Star, // Need to import Star or remove if not available, using CheckCircle as fallback if needed or add to import
+                                title: "AI-Driven Systems",
+                                desc: "AI-Driven, High-Technology Recruitment Systems for precision matching."
+                            },
+                            {
+                                icon: Users,
+                                title: "Bulk Hiring",
+                                desc: "Bulk Hiring Capability and End-to-End Workforce Management."
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[var(--gold)]/30 hover:shadow-xl transition-all group">
-                                <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-[var(--gold)] group-hover:scale-110 transition-transform">
-                                    <item.icon className="w-7 h-7" />
+                            <div key={idx} className="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[var(--gold)]/30 hover:shadow-xl transition-all group h-full">
+                                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 text-[var(--gold)] group-hover:scale-110 transition-transform">
+                                    <item.icon className="w-6 h-6" />
                                 </div>
-                                <span className="inline-block px-3 py-1 rounded-full bg-[var(--blue-darkest)]/5 text-[var(--blue-darkest)] text-xs font-bold mb-4 uppercase tracking-wider">
-                                    For {item.for}
-                                </span>
-                                <h3 className="text-xl font-bold text-[var(--blue-darkest)] mb-3">{item.title}</h3>
-                                <p className="text-[var(--blue-medium)] leading-relaxed">{item.desc}</p>
+                                <h3 className="text-lg font-bold text-[var(--blue-darkest)] mb-2">{item.title}</h3>
+                                <p className="text-[var(--blue-medium)] text-sm leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>
