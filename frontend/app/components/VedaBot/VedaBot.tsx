@@ -105,7 +105,7 @@ const VedaBot = () => {
         <div className="fixed bottom-6 right-6 z-[9999] font-sans">
             {/* Chat Window */}
             <div
-                className={`absolute bottom-20 right-0 w-[380px] h-[600px] bg-gray-900 border border-[var(--gold)]/30 rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300 origin-bottom-right ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 pointer-events-none"
+                className={`fixed sm:absolute bottom-24 sm:bottom-20 right-4 sm:right-0 left-4 sm:left-auto w-auto sm:w-[380px] h-[600px] max-h-[70vh] sm:max-h-none bg-gray-900 border border-[var(--gold)]/30 rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300 origin-bottom-right ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 pointer-events-none"
                     }`}
             >
                 {/* Header */}

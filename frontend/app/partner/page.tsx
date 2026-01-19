@@ -84,9 +84,9 @@ export default function PartnerPage() {
             </section>
 
             {/* Why Choose Us Section */}
-            <section className="py-24 px-4 bg-white">
+            <section className="py-12 md:py-24 px-4 bg-white">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-10 md:mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold text-[var(--blue-darkest)] mb-6">Why Choose Us</h2>
                         <p className="text-[var(--blue-medium)] max-w-3xl mx-auto text-lg leading-relaxed italic">
                             &quot;Your workforce challenges become our operational responsibility, supported by skilled talent, continuous development, compliance assurance, and AI-enabled efficiency.&quot;
