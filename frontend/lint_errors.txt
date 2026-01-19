@@ -1,0 +1,197 @@
+﻿
+> frontend@0.1.0 lint
+> eslint
+
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\about-us\page.tsx
+  4:54  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+  4:66  warning  'Eye' is defined but never used         @typescript-eslint/no-unused-vars
+  4:71  warning  'Target' is defined but never used      @typescript-eslint/no-unused-vars
+  4:79  warning  'Handshake' is defined but never used   @typescript-eslint/no-unused-vars
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\api\jobs\route.ts
+  30:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  33:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  50:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\book-counselling\page.tsx
+    7:10   warning  'Calendar' is defined but never used                             @typescript-eslint/no-unused-vars
+    7:81   warning  'ArrowLeft' is defined but never used                            @typescript-eslint/no-unused-vars
+    8:8    warning  'Link' is defined but never used                                 @typescript-eslint/no-unused-vars
+   40:29   warning  'data' is defined but never used                                 @typescript-eslint/no-unused-vars
+   48:18   warning  'error' is defined but never used                                @typescript-eslint/no-unused-vars
+  135:37   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  135:124  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\careers\page.tsx
+   4:8   warning  'Image' is defined but never used                                @typescript-eslint/no-unused-vars
+  46:27  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\components\BrochureModal.tsx
+  26:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\components\BrochureModal.tsx:26:9
+  24 |
+  25 |     useEffect(() => {
+> 26 |         setShow(isOpen);
+     |         ^^^^^^^ Avoid calling setState() directly within an effect
+  27 |         if (isOpen) {
+  28 |             document.body.style.overflow = "hidden";
+  29 |         } else {  react-hooks/set-state-in-effect
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\components\JobCard.tsx
+   1:17   warning  'useState' is defined but never used                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+   4:10   warning  'Loader2' is defined but never used                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  21:108  warning  'applyLink' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  84:25   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\components\Notification.tsx
+  39:9  error  'fadeOutTimer' is never reassigned. Use 'const' instead  prefer-const
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\components\VedaBot\VedaBot.tsx
+    4:39  warning  'User' is defined but never used          @typescript-eslint/no-unused-vars
+  163:73  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  186:73  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\components\VedaBot\botLogic.ts
+  1:10  warning  'GraduationCap' is defined but never used  @typescript-eslint/no-unused-vars
+  1:25  warning  'Briefcase' is defined but never used      @typescript-eslint/no-unused-vars
+  1:36  warning  'Search' is defined but never used         @typescript-eslint/no-unused-vars
+  1:44  warning  'Globe' is defined but never used          @typescript-eslint/no-unused-vars
+  1:51  warning  'Home' is defined but never used           @typescript-eslint/no-unused-vars
+  9:12  error    Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\components\WelcomeModal.tsx
+    3:20  warning  'useEffect' is defined but never used                            @typescript-eslint/no-unused-vars
+   73:21  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  103:17  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\country-guides\page.tsx
+  6:10  warning  'MapPin' is defined but never used         @typescript-eslint/no-unused-vars
+  6:18  warning  'GraduationCap' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\employer-handbook\page.tsx
+   4:8   warning  'Image' is defined but never used                                @typescript-eslint/no-unused-vars
+  49:92  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\events\[id]\page.tsx
+  131:11  warning  'router' is assigned a value but never used                      @typescript-eslint/no-unused-vars
+  142:72  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  142:93  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\events\page.tsx
+  6:28  warning  'Search' is defined but never used  @typescript-eslint/no-unused-vars
+  6:36  warning  'Filter' is defined but never used  @typescript-eslint/no-unused-vars
+  6:63  warning  'Users' is defined but never used   @typescript-eslint/no-unused-vars
+  9:8   warning  'Button' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\get-in-touch\page.tsx
+   9:7    warning  'SUBMIT_CONTACT_FORM' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  59:25   error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  87:32   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  90:40   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  90:122  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\home\components\CareerCounseling.tsx
+   31:32   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+   31:156  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  105:49   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\home\components\Testimonials.tsx
+  120:37  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  120:57  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\immigration-guide\page.tsx
+  4:8   warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+  6:28  warning  'Globe' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\jobs\[id]\apply\page.tsx
+    8:30  warning  'CheckCircle' is defined but never used                          @typescript-eslint/no-unused-vars
+   30:13  warning  'id' is assigned a value but never used                          @typescript-eslint/no-unused-vars
+   36:11  warning  'externalLocation' is assigned a value but never used            @typescript-eslint/no-unused-vars
+   53:29  warning  'data' is defined but never used                                 @typescript-eslint/no-unused-vars
+  106:28  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\jobs\[id]\page.tsx
+   5:10  warning  'Loader2' is defined but never used       @typescript-eslint/no-unused-vars
+  73:50  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\jobs\search\page.tsx
+  667:30  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\legal\privacy\page.tsx
+  16:39  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  16:42  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  16:45  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  16:49  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  16:55  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  16:58  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\partner\page.tsx
+  4:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\resources\[slug]\page.tsx
+   6:31   warning  'User' is defined but never used                                 @typescript-eslint/no-unused-vars
+   6:37   warning  'Clock' is defined but never used                                @typescript-eslint/no-unused-vars
+  84:141  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  93:29   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  93:126  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  93:155  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\resources\page.tsx
+  5:45  warning  'Globe' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\student-stories\page.tsx
+   5:8    warning  'Link' is defined but never used                                 @typescript-eslint/no-unused-vars
+   6:29   warning  'Star' is defined but never used                                 @typescript-eslint/no-unused-vars
+   6:35   warning  'GraduationCap' is defined but never used                        @typescript-eslint/no-unused-vars
+  38:108  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  38:122  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\under-development\page.tsx
+   3:8   warning  'Link' is defined but never used                                 @typescript-eslint/no-unused-vars
+  43:27  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  57:27  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\universities\components\UniHero.tsx
+  10:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\universities\components\UniHero.tsx:10:9
+   8 |
+   9 |     useEffect(() => {
+> 10 |         setIsVisible(true);
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  11 |     }, []);
+  12 |
+  13 |     return (  react-hooks/set-state-in-effect
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\universities\components\UniServices.tsx
+  63:47  warning  The ref value 'sectionRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'sectionRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\universities\components\UniSteps.tsx
+  42:47  warning  The ref value 'sectionRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'sectionRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+D:\Vedascholars18jan\veda-scholars\frontend\app\university-case-study\page.tsx
+  6:10  warning  'TrendingUp' is defined but never used  @typescript-eslint/no-unused-vars
+  6:22  warning  'Users' is defined but never used       @typescript-eslint/no-unused-vars
+  6:29  warning  'Target' is defined but never used      @typescript-eslint/no-unused-vars
+
+D:\Vedascholars18jan\veda-scholars\frontend\hooks\useJobSearch.ts
+  35:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 95 problems (44 errors, 51 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
